@@ -1,0 +1,23 @@
+.containerItemVaga{
+    border-bottom: 1px solid var(--principal);
+    width: 100%;
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.infoVaga{
+    width: 80%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}

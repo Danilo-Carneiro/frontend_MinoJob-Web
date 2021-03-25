@@ -1,0 +1,60 @@
+.sidebarContainer{
+    background: var(--black);
+    color: var(--white);
+
+    height: 100vh;
+    width: 20vw;
+    padding-top: 2rem;
+    position: fixed;
+
+    box-shadow: 20px 0px 26px -2px rgba(0,0,0,0.36);
+}
+
+.contentSidebar{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 80%;
+    margin: 0 0 2rem 1rem;
+}
+
+.avatar{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 600 ;
+    margin-left: 1rem;
+}
+
+.menu{
+    width: 80%;
+}
+
+
+.itemMenu{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--white);
+}
+
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    
+}
+

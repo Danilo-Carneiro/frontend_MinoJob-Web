@@ -1,0 +1,12 @@
+.topBarContainer{
+    height: 10vh;
+    width: 80vw;
+    background: var(--principal);
+    float: right;
+    padding: 1rem 1rem 5rem 2rem;
+}
+
+.pageName{
+    font-weight: 700;
+    color: var(--white);
+}

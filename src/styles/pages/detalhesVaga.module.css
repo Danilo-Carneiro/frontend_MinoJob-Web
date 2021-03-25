@@ -1,0 +1,107 @@
+.vagasDetalhesContainer{
+    width: 75vw;
+    float: right;
+    padding: 2rem 0 0 1rem;
+    display: flex;
+    min-height: 86vh;
+}
+
+.contentDetalhesVagasContainer{
+    background: var(--white);
+    box-shadow: -9px -5px 26px -2px rgba(0,0,0,0.36);
+    border: 1px solid var(--principal);
+
+    border-radius: 8px 0 0 0;
+    height: 100%;
+    padding-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerForm{
+    width: 80%;
+}
+
+.fieldset{
+    margin-top: 2rem;
+    border: none;
+}
+
+.info{
+    margin-bottom: 0.5rem;
+}
+
+.label{
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input{
+    background: var(--background);
+    border: 1px solid var(--principal);
+    border-radius: 8px;
+    height: 2rem;
+    width: 30rem;
+}
+
+#salarioContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contentSalarioContainer{
+    display: flex;
+    margin-top: 1rem;
+}
+
+#info{
+    display: flex;
+}
+
+#salarioInput{
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+.boxBtns{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
+    margin: 3rem 0 3rem 0;
+}
+
+.btn{
+    height: 3rem;
+    width: 8rem;
+
+    border-radius: 8px;
+    outline: none;
+    background: var(--white);
+
+    border: 2px solid var(--black);
+}
+
+#btnDelete{
+    color: var(--white);
+    background: var(--red);
+    box-shadow: inset 0 0 0 0 #ff0000;
+    transition: ease-out 0.3s;
+    opacity: 0.9;
+}
+
+#btnDelete:hover{
+    color: var(--white);
+    background: var(--red);
+    box-shadow: inset 3rem 0 0 0 #ff0000;
+    opacity: 1;
+}
+
+#btnAlter{
+    color: var(--white);
+    background: var(--principal);
+}

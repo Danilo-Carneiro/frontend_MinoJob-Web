@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --background: #efffff;
+  --principal: #56b894;
+  --black: #000501;
+  --blue: #197bbd;
+  --red: #ff0000;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media(max-width: 1080px) {
+  html {
+    /*
+      16px
+    */
+    font-size: 100%;
+  }
+}
+@media(max-width: 720px) {
+  html {
+    /*
+      14px
+    */
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font: 400 1rem "Inter", sans-serif;
+  background: var(--background);
+}
