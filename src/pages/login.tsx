@@ -1,13 +1,15 @@
-import Link from 'next/link'
+import Head from 'next/head'
+import Autenticacao from '../components/Autenticacao'
 
 export default function Login(){
     return(
-        <div>
-            Login
-            <br/>
-            <Link href="/home">
-                Home
-            </Link>
-        </div>
+        <>
+            <Head>
+                <title>Login | MinoJob</title>
+            </Head>
+            <div>
+                <Autenticacao page="Acesse sua conta"/>
+            </div>
+        </>
     )
 }

@@ -40,3 +40,19 @@ body {
   font: 400 1rem "Inter", sans-serif;
   background: var(--background);
 }
+
+button{
+  border: none;
+  padding: 0.5rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

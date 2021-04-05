@@ -1,6 +1,104 @@
 .autenticacaoContainer{
     margin: 0 auto;
     height: 100vh;
+    width: 100vw;
+    padding: 4.5rem;
     position: fixed;
+    background: url('../../../public/assets/background.svg') right no-repeat;
+
+    background-color: var(--black);
+    color: var(--white);
 }
+
+.cardAutenticacaoContainer{
+    /* border: solid red 1px; */
+    width: 33vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.form{
+    width: 80%;
+}
+
+.info{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.info p{
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 0.5rem;
+}
+
+.info input{
+    height: 2rem;
+    outline: none;
+    background-color: #262626;
+    border-radius: 8px;
+    color: var(--white);
+    padding-left: 0.5rem;
+    width: 16rem;
+}
+
+.btnLogin{
+    background: var(--principal);
+    color: var(--white);
+    opacity: 1;
+}
+
+
+.btnLogin:hover{
+    opacity: 0.8;
+}
+
+.divisor{
+    width: 80%;
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.divisor div{
+    border-top: 1px solid var(--white);
+    display: flex;
+    flex: 2;
+}
+
+.divisor .textoDivisor{
+    flex: 3;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.criarContaBtn{
+    color: var(--principal);
+    background: var(--black);
+    border: 3px solid var(--principal);
+}
+
+.criarContaBtn:hover{
+    background: var(--white);
+}
+
+
+
 

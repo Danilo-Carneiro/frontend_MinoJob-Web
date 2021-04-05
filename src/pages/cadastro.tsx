@@ -9,7 +9,7 @@ export default function Cadastro(){
                 <title> Cadastro | MinoJob </title>
             </Head>
             <div>
-                <Autenticacao page="Cadastro"/>
+                <Autenticacao page="Crie sua conta"/>
             </div>
         </>
     )
