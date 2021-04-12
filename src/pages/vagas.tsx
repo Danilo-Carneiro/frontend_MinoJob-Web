@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
-import ItemVaga from "../components/itemVaga"
+import ItemVaga from "../components/ItemVaga"
 import Sidebar from "../components/Sidebar"
 import TopBar from "../components/TopBar"
 import styles from '../styles/pages/vagas.module.css'
@@ -13,7 +13,8 @@ export default function Vagas(){
             </Head>
             <TopBar page="Vagas"/>
             
-            <Sidebar />
+            {/* Passar como parâmetro para a Sidebar a página que deverá ser marcada como selecionada na sidebar "/" */}
+            <Sidebar pagina="vagas"/>
             
             <div className={styles.vagasContainer}>
                 <div className={styles.contentVagasContainer}>

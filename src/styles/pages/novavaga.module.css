@@ -6,7 +6,8 @@
 }
 
 .contentNovaVagaContainer{
-    background: var(--white);
+    background: var(--black);
+    color: var(--white);
     border-radius: 8px 0 0 0;
     border: 1px solid var(--principal);
     display: flex;

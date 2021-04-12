@@ -11,7 +11,8 @@ export default function DetalhesVaga(){
             </Head>
             <TopBar page="Detalhes Vaga"/>
             
-            <Sidebar />
+            {/* Passar como parâmetro para a Sidebar a página que deverá ser marcada como selecionada na sidebar "/" */}
+            <Sidebar pagina="vagas" />
             
             <div className={styles.vagasDetalhesContainer}>
                 <div className={styles.contentDetalhesVagasContainer}>

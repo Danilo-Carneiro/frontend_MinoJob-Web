@@ -1,19 +1,22 @@
 .sidebarContainer{
-    background: var(--black);
-    color: var(--white);
+    background: var(--principal);
+    color: var(--black);
 
     height: 100vh;
     width: 20vw;
     padding-top: 2rem;
     position: fixed;
 
-    box-shadow: 20px 0px 26px -2px rgba(0,0,0,0.36);
+    
+    /* box-shadow: 20px 0px 26px -2px rgba(0,0,0,0.36); */
 }
 
 .contentSidebar{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
+
+    /* border: 1px solid black; */
 }
 
 .userInfo{
@@ -23,13 +26,15 @@
 
     width: 80%;
     margin: 0 0 2rem 1rem;
+
+    /* border: 1px solid blue; */
 }
 
 .avatar{
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: var(--black);
 }
 
 .name{
@@ -39,7 +44,11 @@
 }
 
 .menu{
-    width: 80%;
+    width: 100%;
+
+    padding: 0 0 0 20px;
+
+    /* border: 1px solid green; */
 }
 
 
@@ -47,14 +56,44 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid var(--white);
+    width: 100%;
+    color: var(--black);
+    font-weight: 700;
+    /* border: 1px solid red; */
+}
+
+.itemMenu:hover{
+    opacity: 0.8;
+    /* border: 1px solid red; */
 }
 
 .icon{
     height: 1.5rem;
     width: 1.5rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-    
+    margin-right: 1rem;    
+}
+
+#selecionado{
+    background-color: var(--black);
+    border-radius: 30px 0 0 30px ;
+    color: var(--principal);
+}
+
+#selecionado:hover{
+    opacity: 1;
+    cursor: default;
+}
+
+
+.boxLogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10rem;
+}
+
+.logo{
+    width: 70%;
 }
 

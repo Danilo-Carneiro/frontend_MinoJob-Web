@@ -11,7 +11,8 @@ export default function NovaVaga(){
             </Head>
             <TopBar page="Nova vaga"/>
             
-            <Sidebar />
+            {/* Passar como parâmetro para a Sidebar a página que deverá ser marcada como selecionada na sidebar "/" */}
+            <Sidebar pagina="novavaga" />
             
             <div className={styles.novaVagaContainer}>
                 <div className={styles.contentNovaVagaContainer}>

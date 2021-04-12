@@ -10,7 +10,8 @@ export default function Home(){
                 <title>Dashboard | MinoJob</title>
             </Head>
             <TopBar page="Dashboard"/>
-            <Sidebar />
+            {/* Passar como parâmetro para a Sidebar a página que deverá ser marcada como selecionada na sidebar "/" */}
+            <Sidebar pagina="home" />
             
             <div></div>
         </div>
