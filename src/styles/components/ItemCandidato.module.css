@@ -1,0 +1,25 @@
+.itemCandidato{
+    flex-direction: row;
+    /* border: 0.5px solid red; */
+    justify-content: center;
+    padding: 0.5rem;
+
+    display: flex;
+
+}
+
+.infosUsuario{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.avatar{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.2rem;
+}
+
+.vaga{
+    width: 50%;
+}

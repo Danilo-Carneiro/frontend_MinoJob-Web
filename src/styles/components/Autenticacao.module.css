@@ -89,14 +89,21 @@
     justify-content: center;
 }
 
-.criarContaBtn{
+.mudarTipoDeAutenticacaoBtn{
     color: var(--principal);
     background: var(--black);
     border: 3px solid var(--principal);
+    transition: 0.5;
 }
 
-.criarContaBtn:hover{
+.mudarTipoDeAutenticacaoBtn:hover{
     background: var(--white);
+}
+
+.nomeSessao{
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0 0 1rem 1rem;
 }
 
 

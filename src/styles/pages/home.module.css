@@ -1,0 +1,115 @@
+.dashboardContainer{
+    width: 75vw;
+    float: right;
+    padding: 2rem 0 0 1rem;
+    display: flex;
+    min-height: 86vh;
+}
+
+.contentDashboardContainer{
+    color: var(--black);
+
+    border-radius: 8px 0 0 0;
+    height: 100%;
+    /* padding-top: 4rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* *************Parte esquerda da pagina************** */
+.columnLeft{
+    /* border: 1px solid red;    */
+    width: 60%;
+}
+
+
+.boxAzul{
+    background-color: var(--principal); 
+    color: var(--white);
+    border-radius: 8px;
+    padding: 40px 20px 20px 30px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.boxAzul h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.textBoxAzul{
+    width: 70%;
+}
+
+.whellchairSvg{
+    width: 50%;
+}
+
+
+.areaCandidatos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--principal);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.areaCandidatos h2{
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.cabecalhoTabela{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalhoTabela h4{
+    width: 50%;
+}
+/* *************Parte direita da pagina************** */
+.columnRigth{
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.vagasPublicadas{
+    color: var(--principal);
+    background-color: var(--black);
+    width: 80%;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    height: 7rem;
+    margin-bottom: 10px;
+}
+
+.maisCandidatos{
+    border-radius: 8px;
+    border: 5px solid var(--principal);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.trofeu{
+    height: 156px;
+    width: 156px;
+    margin-top: 0.5rem;
+}
+
+.maisCandidatos p{
+    text-align: center;
+    margin-top: 0.5rem;
+}

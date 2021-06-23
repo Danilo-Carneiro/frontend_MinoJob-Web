@@ -10,11 +10,7 @@ export default function Index() {
       </Head>
 
       <div>
-        <Link href="/cadastro">
-          <a>
-            Home
-          </a>
-        </Link>
+        
       </div>
       
     </div>

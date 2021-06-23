@@ -36,16 +36,27 @@ export default function Vagas(){
                         </div>
                     </div>
                     <div className={styles.content}>
-                        {/* <Link href="/detalhesvaga">
-                            <a>
+                        <Link href="/detalhesvaga">
+                            <a className={styles.itemVaga}>
                                 <ItemVaga/>
                             </a>
-                        </Link> */}
+                        </Link>
 
-                        <ItemVaga/>
-                        <ItemVaga/>
-                        <ItemVaga/>
-                        <ItemVaga/>
+                        <Link href="/detalhesvaga">
+                            <a className={styles.itemVaga}>
+                                <ItemVaga/>
+                            </a>
+                        </Link>
+                        <Link href="/detalhesvaga">
+                            <a className={styles.itemVaga}>
+                                <ItemVaga/>
+                            </a>
+                        </Link>
+                        <Link href="/detalhesvaga">
+                            <a className={styles.itemVaga}>
+                                <ItemVaga/>
+                            </a>
+                        </Link>
                         
                     </div>
                 </div>

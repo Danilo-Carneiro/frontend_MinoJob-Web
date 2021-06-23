@@ -1,66 +1,123 @@
+/* Dita o tamanho do container preto */
 .novaVagaContainer{
     width: 75vw;
     float: right;
     padding: 2rem 0 0 1rem;
-    height: 87vh;
+    display: flex;
+    min-height: 86vh;
 }
 
+/* Conteudo do container preto */
 .contentNovaVagaContainer{
     background: var(--black);
     color: var(--white);
-    border-radius: 8px 0 0 0;
-    border: 1px solid var(--principal);
-    display: flex;
-    height: 100%;
     box-shadow: -9px -5px 26px -2px rgba(0,0,0,0.36);
+    border: 1px solid var(--principal);
+
+    border-radius: 8px 0 0 0;
+    height: 82vh;
+    width: 100%;
+    padding-top: 4rem;
+
     display: flex;
-    justify-content: center;
-    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
 }
 
-.containerForm{
+/*Div do formulário*/
+.divForm{
     width: 80%;
 }
 
-.fieldset{
-    margin-top: 2rem;
-    border: none;
+/*Div que separa os inputs em duas colunas*/
+.divInputs{
+    display: flex;
+    flex-direction: row;
 }
 
-.info{
+/*Estilização da coluna da esquerda*/
+.infos:first-child{
+    padding-top: 20px;
+}
+
+/*Div coluna de input*/
+.infos{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+/*Label dos inputs*/
+.infos label{
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.label{
-    margin-right: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.input{
-    background: var(--background);
-    border: 1px solid var(--principal);
-    border-radius: 8px;
+/*Inputs*/
+.infos input{
     height: 2rem;
-    width: 30rem;
+    outline: none;
+    background-color: #262626;
+    border-radius: 8px;
+    color: var(--white);
+    padding-left: 0.5rem;
+    width: 16rem;
+
+    margin-bottom: 1.5rem;
 }
 
-#salarioContainer{
+/*textarea*/
+.infos textarea{
+    height: 2rem;
+    outline: none;
+    background-color: #262626;
+    border-radius: 8px;
+    color: var(--white);
+    padding-left: 0.5rem;
+    width: 16rem;
+
+    margin-bottom: 1.5rem;
+}
+
+/*UF*/
+.uf{
+    width: 6ch;
+    margin-bottom: 1.5rem;
+    height: 2rem;
+    outline: none;
+    border-radius: 8px;
+
+    background-color: #262626;
+    color: var(--white);
+}
+
+/*Div dos Botões*/
+.divBtns{
     display: flex;
-    flex-direction: column;
-
+    justify-content: space-around;
+    width: 60%;
 }
 
-.contentSalarioContainer{
-    display: flex;
-    margin-top: 1rem;
+/*Botão de Limpar o Form*/
+.resetBtn{
+    color: var(--principal);
+    background: var(--black);
+    border: 3px solid var(--principal);
+    transition: 0.5;
 }
 
-#info{
-    display: flex;
+.resetBtn:hover{
+    opacity: 0.5;
 }
 
-#salarioInput{
-    width: 5rem;
-    margin-right: 2rem;
+/*Botão de criar vaga*/
+.submitBtn{
+    background: var(--principal);
+    color: var(--white);
+    opacity: 1;
 }
+
+.submitBtn:hover{
+    opacity: 0.8;
+}
+
