@@ -1,14 +1,23 @@
+import api from '../services/api';
 import styles from '../styles/components/ItemVaga.module.css';
 
-export default function ItemVaga(){
+export interface Vaga {
+    id: number,
+    empresa: Object
+}
+
+export default function ItemVaga(props:any){
+
+    
+
     return(
         <div className={styles.containerItemVaga}>
             <div className={styles.infoVaga}>
                 <div className={styles.top}>
                     <div className={styles.headlineVaga}>
-                        <h2>Nome da vaga</h2>
+                        { <h2>{props.vaga.nome}</h2> } 
                         <br/>
-                        <span>Parte do texto de descrição da vaga Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit soluta, sunt consequatur, earum voluptatem magni cupiditate eius, </span>
+                        <span>{props.vaga.tx_detalhes} </span>
                     </div>
                     <div className={styles.candidatos}>
                         <span>Candidatos:</span>
@@ -17,10 +26,10 @@ export default function ItemVaga(){
                 </div>
                 <div className={styles.bottom}>
                     <span>
-                        <strong>R$1500,00</strong>
+                        <strong>{props.vaga.tx_faixa_salarial != null ? `R$${props.vaga.tx_faixa_salarial}` : `Á combinar`}</strong>
                     </span>
                     <span>
-                        <strong>São Paulo, SP</strong>
+                        <strong>{`${props.vaga.bairro} - ${props.vaga.cidade} / ${props.vaga.uf}`}</strong>
                     </span>
                 </div>
             </div>
