@@ -8,7 +8,7 @@ export default function Autenticacao(props: any) {
     let login = null;
 
     useEffect(() => {
-        
+
     })
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -46,11 +46,6 @@ export default function Autenticacao(props: any) {
     }
 
     identificaPagina(nomePagina);
-
-    let sessaoCadastro = 1
-    function mudaSessão() {
-        return sessaoCadastro + 1
-    }
 
     return (
         <div className={styles.autenticacaoContainer}>
@@ -102,46 +97,72 @@ export default function Autenticacao(props: any) {
                             {/* Caso o login esteja false carregará o formulário de cadastro */}
                             <form className={styles.form}>
                                 {
-                                    (sessaoCadastro == 1 ? (
-                                        <>
-                                            <p className={styles.nomeSessao}>Informações de Acesso</p>
+                                    
+                                    <>
+                                        <p className={styles.nomeSessao}>Informações de Acesso</p>
 
-                                            <div className={styles.info}>
-                                                <label htmlFor="email">
-                                                    <p>Digite seu email de Acesso</p>
-                                                    <input id="email" placeholder="exemplo@email.com" type="text" />
-                                                </label>
-                                            </div>
+                                        <div className={styles.info}>
+                                            <label htmlFor="email">
+                                                <p>Digite seu email de Acesso</p>
+                                                <input name="email" id="email" placeholder="exemplo@email.com" type="text" />
+                                            </label>
+                                        </div>
 
-                                            <div className={styles.info}>
-                                                <label htmlFor="senha">
-                                                    <p>Digite sua senha de Acesso</p>
-                                                    <input id="senha" placeholder="**********" type="text" />
-                                                </label>
-                                            </div>
-                                        </>
-                                    ) : (
-                                        <>
-                                            <p className={styles.nomeSessao}>Informações da empresa</p>
+                                        <div className={styles.info}>
+                                            <label htmlFor="senha">
+                                                <p>Digite sua senha de Acesso</p>
+                                                <input name="senha" id="senha" placeholder="**********" type="text" />
+                                            </label>
+                                        </div>
 
-                                            <div className={styles.info}>
-                                                <label htmlFor="email">
-                                                    <p>Digite seu email de Acesso</p>
-                                                    <input id="email" placeholder="exemplo@email.com" type="text" />
-                                                </label>
-                                            </div>
+                                        <div className={styles.info}>
+                                            <label htmlFor="senha">
+                                                <p>Nome da empresa</p>
+                                                <input name="nmEmpresa" id="senha" placeholder="**********" type="text" />
+                                            </label>
+                                        </div>
 
-                                            <div className={styles.info}>
-                                                <label htmlFor="senha">
-                                                    <p>Digite sua senha de Acesso</p>
-                                                    <input id="senha" placeholder="**********" type="password" />
-                                                </label>
-                                            </div>
-                                            {/* ******************FIM DO FORM DE CADASTRO****************** */}
+                                        <div className={styles.info}>
+                                            <label htmlFor="senha">
+                                                <p>Descrição</p>
+                                                <input name="dsEmpresa" id="senha" placeholder="**********" type="text" />
+                                            </label>
+                                        </div>
 
-                                        </>
-                                    )
-                                    )
+                                        <div className={styles.info}>
+                                            <label htmlFor="senha">
+                                                <p>Telefone de Contato</p>
+                                                <input name="telContato" id="senha" placeholder="**********" type="text" />
+                                            </label>
+                                        </div>
+
+                                        <div className={styles.info}>
+                                            <label htmlFor="senha">
+                                                <p>Email de Contato</p>
+                                                <input name="emailContato" id="senha" placeholder="**********" type="text" />
+                                            </label>
+                                        </div>
+
+                                        <div className={styles.info}>
+                                            <label htmlFor="senha">
+                                                <p>Endereço</p>
+                                                <input name="endEmpresa" id="senha" placeholder="**********" type="text" />
+                                            </label>
+                                        </div>
+
+                                        <div className={styles.info}>
+                                            <label htmlFor="senha">
+                                                <p>CNPJ</p>
+                                                <input name="cnpj" id="senha" placeholder="**********" type="text" />
+                                            </label>
+                                        </div>
+
+                                        
+                                    
+                                
+                                        {/* ******************FIM DO FORM DE CADASTRO****************** */}
+
+                                    </>
                                 }
 
 
@@ -149,7 +170,6 @@ export default function Autenticacao(props: any) {
 
                             </form>
 
-                            <button className={styles.btnLogin} onClick={mudaSessão}>Avançar</button>
 
                             <div className={styles.divisor}>
                                 <div />

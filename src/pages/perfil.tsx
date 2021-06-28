@@ -1,9 +1,38 @@
 import Head from "next/head";
 import Sidebar from "../components/Sidebar";
+import { useEffect, useState } from "react"
 import TopBar from "../components/TopBar";
 import styles from "../styles/pages/perfil.module.css";
+import api from "../services/api";
 
-export default function Vagas() {
+
+export default function Perfil() {
+  const [user, setUser] = useState({
+    nome: '',
+    descricao: '',
+    telefone: '',
+    email: '',
+    endereco: '',
+    cnpj: '',
+  })
+
+    useEffect(() => {
+        //Capturando o token e o ID do usuario logado
+        let token = localStorage.getItem("@TOKEN")
+        let id_user = localStorage.getItem("@ID")
+        
+        console.log(id_user)
+
+        api.get(`/usuario/id/${id_user}`, {
+            headers: { 'Authorization': token }
+        })
+          .then(response => {
+            setUser(response.data)
+          })
+          .catch(err => console.error(err))
+    }) 
+
+
   return (
     <div>
       <Head>
@@ -24,11 +53,11 @@ export default function Vagas() {
 
             <div className={styles.cabecalho}>
               <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/65602748?s=200&v=4" alt="Logo"/>
-              <h1 className={styles.name}>Coca Cola</h1>                
+              <h1 className={styles.name}>{user.nome}</h1>                
             </div>
 
             <p className={styles.descricao}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam, autem fugiat tenetur iste nam, unde, totam provident mollitia delectus laborum sed molestiae. Quisquam accusamus ea impedit nihil. Maxime, provident! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam, autem fugiat tenetur iste nam, unde, totam provident mollitia delectus laborum sed molestiae. Quisquam accusamus ea impedit nihil. Maxime, provident! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam, autem fugiat tenetur iste nam, unde, totam provident mollitia delectus laborum sed molestiae. Quisquam accusamus ea impedit nihil. Maxime, provident!
+              {user.descricao}
             </p>
             
           </div>
@@ -37,24 +66,24 @@ export default function Vagas() {
             <div className={styles.contentInfosContato}>
               <div className={styles.infoDeContato}>
                 <h4>Telefone</h4>
-                <p>00 0000-0000</p>                                                      
+                <p>{user.telefone}</p>                                                      
               </div>
 
               <div className={styles.infoDeContato}>
                 <h4>Email de contato</h4>
-                <p>emailcontato@empresa</p>                                                      
+                <p>{user.email}</p>                                                      
               </div>
             </div>
           </div>
 
           <div className={styles.info}>
             <h4>Endereço</h4>
-            <p>Av Paulista 2215 São Paulo, SP</p> 
+            <p>{user.endereco}</p> 
           </div>
 
           <div className={styles.info} id={styles.cnpj}>
             <h4>CNPJ</h4>
-            <p>00.000.000/0000-00</p> 
+            <p>{user.cnpj}</p> 
           </div>
 
         </div>

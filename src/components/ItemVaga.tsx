@@ -6,6 +6,7 @@ export interface Vaga {
     empresa: Object
 }
 
+
 export default function ItemVaga(props:any){
 
     
