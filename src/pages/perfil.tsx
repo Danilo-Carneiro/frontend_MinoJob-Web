@@ -21,7 +21,6 @@ export default function Perfil() {
         let token = localStorage.getItem("@TOKEN")
         let id_user = localStorage.getItem("@ID")
         
-        console.log(id_user)
 
         api.get(`/usuario/id/${id_user}`, {
             headers: { 'Authorization': token }
