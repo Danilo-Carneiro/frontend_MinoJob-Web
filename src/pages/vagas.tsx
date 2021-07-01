@@ -12,6 +12,9 @@ export default function Vagas() {
 
     const [vaga, setVaga] = useState([])
 
+    const token = localStorage.getItem("@TOKEN")
+    const id = localStorage.getItem("@ID")
+
     useEffect(() => {
         //Capturando o token e o ID do usuario logado
         let token = localStorage.getItem("@TOKEN")
@@ -25,6 +28,8 @@ export default function Vagas() {
             })
             .catch(err => console.error(err))
     })
+
+    
 
     const tamanho = vaga.length
 
@@ -63,6 +68,12 @@ export default function Vagas() {
                             
                             return <ItemVaga key={i.id} vaga={i} />
                         })
+
+                        // vaga.filter((i => i.id == id) => {
+                        //     return <ItemVaga key={i.id} vaga={i} />
+                        // })
+                            
+                        
                     }
 
 

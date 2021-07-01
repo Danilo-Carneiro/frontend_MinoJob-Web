@@ -34,6 +34,22 @@ export default function Autenticacao(props: any) {
             })
     }
 
+    // function submitCadastro(email, senha, nmEmpresa) {
+    //     api.post('/usuario', {
+    //         "email": email,
+    //         "senha": senha,
+    //         "nmEmpresa": nmEmpresa
+    //     })
+    //         .then(function (response) {
+    //             //Setando o token e o id no localStorage
+    //             localStorage.setItem("@TOKEN", response.data.token)
+    //             localStorage.setItem("@ID", response.data.id)
+    //         })
+    //         .catch(function (error) {
+    //             console.error(error)
+    //         })
+    // }
+
 
 
 
@@ -116,42 +132,42 @@ export default function Autenticacao(props: any) {
                                         </div>
 
                                         <div className={styles.info}>
-                                            <label htmlFor="senha">
+                                            <label htmlFor="nmEmpresa">
                                                 <p>Nome da empresa</p>
                                                 <input name="nmEmpresa" id="senha" placeholder="**********" type="text" />
                                             </label>
                                         </div>
 
                                         <div className={styles.info}>
-                                            <label htmlFor="senha">
+                                            <label htmlFor="dsEmpresa">
                                                 <p>Descrição</p>
                                                 <input name="dsEmpresa" id="senha" placeholder="**********" type="text" />
                                             </label>
                                         </div>
 
                                         <div className={styles.info}>
-                                            <label htmlFor="senha">
+                                            <label htmlFor="telContato">
                                                 <p>Telefone de Contato</p>
                                                 <input name="telContato" id="senha" placeholder="**********" type="text" />
                                             </label>
                                         </div>
 
                                         <div className={styles.info}>
-                                            <label htmlFor="senha">
+                                            <label htmlFor="emailContato">
                                                 <p>Email de Contato</p>
                                                 <input name="emailContato" id="senha" placeholder="**********" type="text" />
                                             </label>
                                         </div>
 
                                         <div className={styles.info}>
-                                            <label htmlFor="senha">
+                                            <label htmlFor="endEmpresa">
                                                 <p>Endereço</p>
                                                 <input name="endEmpresa" id="senha" placeholder="**********" type="text" />
                                             </label>
                                         </div>
 
                                         <div className={styles.info}>
-                                            <label htmlFor="senha">
+                                            <label htmlFor="cnpj">
                                                 <p>CNPJ</p>
                                                 <input name="cnpj" id="senha" placeholder="**********" type="text" />
                                             </label>
